@@ -3,28 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using TMPro;
 
 public class InputReader : MonoBehaviour
 {
 
     public string line;
     public int lineSize;
+    public TMP_Text demo;
 
-    public Button button0;
-    public Button button1;
-    public Button button2;
-    public Button button3;
-    public Button button4;
-    public Button button5;
-    public Button button6;
-    public Button button7;
-    public Button button8;
-    public Button button9;
-
-    public Button minus;
-    public Button plus;
-    public Button divide;
-    public Button mult;
+    public CompareEqs compare;
 
 
 
@@ -53,11 +41,19 @@ public class InputReader : MonoBehaviour
             line += testing;
         }
         Debug.Log(line);
+        demo.text = line;
     }
 
     public void DeleteButton()
     {
         line = line.Substring(0, line.Length - 1);
         Debug.Log(line);
+        demo.text = line;
+    }
+
+    public void SendAnswer()
+    {
+        compare.attempt = line;
+        compare.CheckAnswer();
     }
 }

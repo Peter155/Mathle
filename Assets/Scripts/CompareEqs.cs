@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using System.Data;
 
 public class CompareEqs : MonoBehaviour
 {
 
     public string answer;
     public string attempt;
+    public TMP_Text result;
+    public TMP_Text playerResult;
+    private DataTable dataTable;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        dataTable = new DataTable();
     }
 
     // Update is called once per frame
@@ -20,14 +25,26 @@ public class CompareEqs : MonoBehaviour
         
     }
 
-    public bool CheckAnswer()
+    public void CheckAnswer()
     {
+        answer = answer.Replace(" ", string.Empty);
         if (attempt == answer)
         {
-            return true;
+            Debug.Log("Correct");
+            result.text = "Correct";
+            playerResult.text = (dataTable.Compute(attempt, "")).ToString();
+            Debug.Log(dataTable.Compute(attempt, ""));
+            //return true;
+        }
+        else
+        {
+            Debug.Log("Incorrect");
+            result.text = "Incorrect";
+            playerResult.text = (dataTable.Compute(attempt, "")).ToString();
+            Debug.Log(dataTable.Compute(attempt, ""));
         }
 
-        return false;
+        //return false;
 
         //Console.WriteLine(dataTable.Compute(equation, ""));
     }

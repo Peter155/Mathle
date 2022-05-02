@@ -10,6 +10,8 @@ public class ButtonCode : MonoBehaviour
     public InputReader Handler;
     public string thisString;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,4 +29,6 @@ public class ButtonCode : MonoBehaviour
     {
         Handler.SendInput(thisString);
     }
+
+    
 }

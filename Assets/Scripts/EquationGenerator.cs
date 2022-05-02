@@ -4,12 +4,15 @@ using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
 using Unity.Mathematics;
+using TMPro;
 
 public class EquationGenerator : MonoBehaviour
 {
 
     public int PeterDirt;
     public int level;
+    public CompareEqs compare;
+    public TMP_Text showAnswer;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,8 @@ public class EquationGenerator : MonoBehaviour
             Console.WriteLine(dataTable.Compute(equation, ""));
             Debug.Log(equation);
             Debug.Log(dataTable.Compute(equation, ""));
+            compare.answer = equation;
+            showAnswer.text = equation;
         }
     }
 
