@@ -52,6 +52,23 @@ public class EquationGenerator : MonoBehaviour
         }
     }*/
 
+    public void genEquation()
+    {
+        EquationGenerator helloWorld = new EquationGenerator();
+        DataTable dataTable = new DataTable();
+
+        for (int i = 0; i < 1; i++)
+        {
+            string equation = String.Join(" ", helloWorld.getEquation().ToArray());
+            Console.WriteLine(equation);
+            Console.WriteLine(dataTable.Compute(equation, ""));
+            Debug.Log(equation);
+            Debug.Log(dataTable.Compute(equation, ""));
+            compare.answer = equation;
+            showAnswer.text = equation;
+        }
+    }
+
     public List<string> getEquation()
     {
         List<string> equation = new List<string>();

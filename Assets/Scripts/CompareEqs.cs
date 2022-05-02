@@ -13,6 +13,8 @@ public class CompareEqs : MonoBehaviour
     public TMP_Text playerResult;
     private DataTable dataTable;
 
+    public EquationGenerator eqGen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class CompareEqs : MonoBehaviour
             result.text = "Correct";
             playerResult.text = (dataTable.Compute(attempt, "")).ToString();
             Debug.Log(dataTable.Compute(attempt, ""));
+            eqGen.genEquation();
             //return true;
         }
         else
