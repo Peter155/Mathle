@@ -7492,6 +7492,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 88
       objectReference: {fileID: 0}
+    - target: {fileID: 8031730365075622157, guid: 65da5a3f77a1c6d4cb54c1d9ba272c41, type: 3}
+      propertyPath: m_text
+      value: "4\u200B"
+      objectReference: {fileID: 0}
     - target: {fileID: 8031730365987895976, guid: 65da5a3f77a1c6d4cb54c1d9ba272c41, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7576,9 +7580,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8031730365987895977, guid: 65da5a3f77a1c6d4cb54c1d9ba272c41, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031730365987895977, guid: 65da5a3f77a1c6d4cb54c1d9ba272c41, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8031730365987895983, guid: 65da5a3f77a1c6d4cb54c1d9ba272c41, type: 3}
       propertyPath: m_Name
       value: InputBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031730366733226986, guid: 65da5a3f77a1c6d4cb54c1d9ba272c41, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65da5a3f77a1c6d4cb54c1d9ba272c41, type: 3}
