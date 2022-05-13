@@ -6,7 +6,7 @@ using TMPro;
 public class DisplayAnswers : MonoBehaviour
 {
 
-    public int[,] numbers;
+    public string[,] numbers;
 
     public TMP_Text row1;
     public TMP_Text row2;
@@ -28,16 +28,16 @@ public class DisplayAnswers : MonoBehaviour
         
     }
 
-    public void setNumbers(int[,] numbers)
+    public void setNumbers(string[,] numbers)
     {
         this.numbers = numbers;
 
-        row1.text = numbers[0, 3].ToString();
-        row2.text = numbers[1, 3].ToString();
-        row3.text = numbers[2, 3].ToString();
+        row1.text = numbers[0, 5];
+        row2.text = numbers[2, 5];
+        row3.text = numbers[4, 5];
 
-        column1.text = numbers[3, 0].ToString();
-        column2.text = numbers[3, 1].ToString();
-        column3.text = numbers[3, 2].ToString();
+        column1.text = numbers[5, 0];
+        column2.text = numbers[5, 2];
+        column3.text = numbers[5, 4];
     }
 }

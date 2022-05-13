@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class NewMagicSquareMaker : MonoBehaviour
 {
+
+    public MainManager manager;
+    public CheckAnswers check;
+
     private void Start()
     {
         string[,] magicSquare = (new NewMagicSquareMaker()).MakeMagicSquare(6, 6);
@@ -18,6 +22,9 @@ public class NewMagicSquareMaker : MonoBehaviour
             }
             //Debug.Log("/n");
         }
+
+        manager.setDisplay(magicSquare);
+        check.DisplaySome(magicSquare);
     }
 
     private string[,] MakeMagicSquare(int rows, int columns)

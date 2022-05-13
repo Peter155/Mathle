@@ -6,8 +6,10 @@ public class MainManager : MonoBehaviour
 {
 
     public CheckAnswers checker;
+    public DisplayAnswers displayAns;
+    public DisplayOperators displayOp;
 
-    public int[,] numbers;
+    public string[,] numbers;
 
     public GameObject[,] squares;
 
@@ -23,8 +25,15 @@ public class MainManager : MonoBehaviour
         
     }
 
+    public void setDisplay(string[,] numbers)
+    {
+        this.numbers = numbers;
+        displayAns.setNumbers(numbers);
+        displayOp.setOperators(numbers);
+    }
+
     public void Submit()
     {
-        checker.StoreNumbers(numbers);
+        checker.StoreNumbers();
     }
 }

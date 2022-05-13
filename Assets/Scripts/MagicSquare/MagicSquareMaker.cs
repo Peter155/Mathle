@@ -16,8 +16,8 @@ public class MagicSquareMaker : MonoBehaviour
 
         helloWorld.printSquare(square);
 
-        displayCheck.setNumbers(square);
-        manager.numbers = square;
+        //displayCheck.setNumbers(square);
+        //manager.numbers = square;
     }
 
     /*public static void Main(string[] args)
