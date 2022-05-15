@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.UI;
 
 public class CheckAnswers : MonoBehaviour
 {
@@ -21,9 +22,17 @@ public class CheckAnswers : MonoBehaviour
     public TMP_InputField box3_2;
     public TMP_InputField box3_3;
 
+    public Button button;
+    public TMP_Text triesText;
+
     public TMP_InputField[,] boxes;
 
+    public WinOrLose winOrLose;
+
     public int count;
+
+    private int tries;
+    private bool win;
 
 
     // Start is called before the first frame update
@@ -31,6 +40,9 @@ public class CheckAnswers : MonoBehaviour
     {
         inputs = new string[3, 3];
         boxes = new TMP_InputField[3, 3];
+
+        tries = 3;
+        win = false;
 
         boxes[0, 0] = box1_1;
         boxes[0, 1] = box1_2;
@@ -94,7 +106,8 @@ public class CheckAnswers : MonoBehaviour
     public void StoreNumbers()
     {
 
-        
+        tries--;
+        win = true;
 
         /*ansNums[0, 0] = answers[0, 0];
         ansNums[0, 1] = answers[0, 2];
@@ -121,11 +134,27 @@ public class CheckAnswers : MonoBehaviour
                 if (inputs[i, j] != ansNums[i, j])
                 {
                     boxes[i, j].image.color = Color.red;
+                    win = false;
                 } else
                 {
                     boxes[i, j].image.color = Color.green;
                 }
             }
         }
+
+        if(win)
+        {
+            winOrLose.win(tries);
+            button.interactable = false;
+        } else if(tries == 0)
+        {
+            triesText.text = "Attempts: " + tries;
+            winOrLose.lose();
+            button.interactable = false;
+        } else
+        {
+            triesText.text = "Attempts: " + tries;
+        }
+
     }
 }
