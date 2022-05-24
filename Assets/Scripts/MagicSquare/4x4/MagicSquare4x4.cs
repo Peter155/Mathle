@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
 
-public class NewMagicSquareMaker : MonoBehaviour
+public class MagicSquare4x4 : MonoBehaviour
 {
-
-    public MainManager manager;
-    public CheckAnswers check;
+    public MainManager4x4 manager;
+    public CheckAns4x4 check;
 
     public int size;
 
     private void Start()
     {
-        string[,] magicSquare = (new NewMagicSquareMaker()).MakeMagicSquare(size, size);
+        string[,] magicSquare = MakeMagicSquare(size, size);
 
         for (int i = 0; i < magicSquare.GetLength(0); i++)
         {
