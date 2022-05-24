@@ -92,7 +92,7 @@ public class CheckAns4x4 : MonoBehaviour
             }
         }
 
-        for (; count < 2; count++)
+        for (; count < 5; count++)
         {
             int values = ansNums.GetLength(0) * ansNums.GetLength(1);
             int index = random.Next(values);

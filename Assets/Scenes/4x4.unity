@@ -13262,7 +13262,7 @@ MonoBehaviour:
   button: {fileID: 34693739}
   triesText: {fileID: 1538887281}
   winOrLose: {fileID: 1984876725}
-  count: 4
+  count: 0
 --- !u!114 &1984876729
 MonoBehaviour:
   m_ObjectHideFlags: 0
