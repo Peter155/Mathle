@@ -50,4 +50,9 @@ public class WinOrLose : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
+
+    public void nextLevel()
+    {
+        SceneManager.LoadScene("4x4");
+    }
 }

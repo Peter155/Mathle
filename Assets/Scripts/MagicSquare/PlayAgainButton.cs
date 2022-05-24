@@ -11,4 +11,9 @@ public class PlayAgainButton : MonoBehaviour
     {
         restarter.playAgain();
     }
+
+    public void nextLevel()
+    {
+        restarter.nextLevel();
+    }
 }
