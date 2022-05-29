@@ -212,7 +212,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.5
 --- !u!1 &2510949021247488491
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +350,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 900, y: 800}
+  m_SizeDelta: {x: 929.9619, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2510949021984450135
 CanvasRenderer:
@@ -388,15 +388,15 @@ MonoBehaviour:
     /  7\r\n /\r\t\tor\r                               /\r\n 7\r                  
     \t\t 2\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 864a3f27808dcd44a9c08f84f825b79f, type: 2}
+  m_sharedMaterial: {fileID: 6442161108453847503, guid: 864a3f27808dcd44a9c08f84f825b79f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4282133770
+  m_fontColor: {r: 0.040000003, g: 0.17670585, b: 0.23529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
