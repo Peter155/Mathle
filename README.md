@@ -4,7 +4,7 @@
 >
 > # Mathle :heart:
 >
-> This site is a Wordle clone with a math theme created by Peter Wainwright, Wuheng Yu, Michael Tran, and Ben Tang.
+> This site is a serious math game created by Peter Wainwright, Wuheng Yu, Michael Tran, and Ben Tang.
 >
 > :ring:
 >
