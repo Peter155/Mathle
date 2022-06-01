@@ -81,7 +81,7 @@ public class CheckAns4x4 : MonoBehaviour
             for (int j = 0; j < 7; j = j + 2)
             {
                 ansNums[i / 2, j / 2] = numbers[i, j];
-                Debug.Log(boxes[i / 2, j / 2]);
+                //Debug.Log(boxes[i / 2, j / 2]);
 
                 if (int.Parse(ansNums[i / 2, j / 2]) > 9)
                 {
@@ -143,7 +143,7 @@ public class CheckAns4x4 : MonoBehaviour
             for (int j = 0; j < 4; j++)
             {
                 inputs[i, j] = boxes[i, j].text;
-                Debug.Log(inputs[i, j]);
+                //Debug.Log(inputs[i, j]);
 
                 if (inputs[i, j] != ansNums[i, j])
                 {

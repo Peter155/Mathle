@@ -13,14 +13,14 @@ public class NewMagicSquareMaker : MonoBehaviour
 
     private void Start()
     {
-        string[,] magicSquare = (new NewMagicSquareMaker()).MakeMagicSquare(size, size);
+        string[,] magicSquare = MakeMagicSquare(size, size);
 
         for (int i = 0; i < magicSquare.GetLength(0); i++)
         {
-            Debug.Log("New row");
+            //Debug.Log("New row");
             for (int j = 0; j < magicSquare.GetLength(1); j++)
             {
-                Debug.Log(magicSquare[i, j]);
+                //Debug.Log(magicSquare[i, j]);
             }
             //Debug.Log("/n");
         }

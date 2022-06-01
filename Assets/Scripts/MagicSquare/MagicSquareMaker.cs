@@ -83,19 +83,19 @@ public class MagicSquareMaker : MonoBehaviour
 
                 if (10 <= number)
                 {
-                    Debug.Log(" {0}" + number);
+                    //Debug.Log(" {0}" + number);
                 }
                 else if (0 <= number & number < 10)
                 {
-                    Debug.Log("  {0}" + number);
+                    //Debug.Log("  {0}" + number);
                 }
                 else if (-10 < number & number < 0)
                 {
-                    Debug.Log(" {0}" + number);
+                    //Debug.Log(" {0}" + number);
                 }
                 else
                 {
-                    Debug.Log(number);
+                    //Debug.Log(number);
                 }
                 //Debug.Log(" ");
             }

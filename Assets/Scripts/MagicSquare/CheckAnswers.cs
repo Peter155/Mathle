@@ -129,7 +129,7 @@ public class CheckAnswers : MonoBehaviour
             for (int j = 0; j < 3; j++)
             {
                 inputs[i, j] = boxes[i, j].text;
-                Debug.Log(inputs[i, j]);
+                //Debug.Log(inputs[i, j]);
 
                 if (inputs[i, j] != ansNums[i, j])
                 {
